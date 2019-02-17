@@ -1,0 +1,11 @@
+.button img {
+    width: 79px;
+    height: 63px;
+}
+
+.button {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
