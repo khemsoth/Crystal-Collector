@@ -1,17 +1,12 @@
-//Not reading score to compare to target
-// Function not changing global variable, Must alter var score outside of functions
 var wins = 0;
 var losses = 0;
 var score = 0;
-
-    var target = getRandInt(19, 120);
-    var crys1 = getRandInt(1, 12);
-    var crys2 = getRandInt(1, 12);
-    var crys3 = getRandInt(1, 12);
-    var crys4 = getRandInt(1, 12);    
+var target = getRandInt(19, 120);
+var crys1 = getRandInt(1, 12);
+var crys2 = getRandInt(1, 12);
+var crys3 = getRandInt(1, 12);
+var crys4 = getRandInt(1, 12);    
     
-
-
 // Set target score and crystal button values
 $(document).ready(function() {
     $("#target").append(target);
@@ -40,8 +35,7 @@ $("#crys4").on("click", function() {
     score += crys4;
     $("#score").text("Score: " + score);
     checkResults();
-})
-});
+})});
 
 // Check results
 function checkResults() {
@@ -68,9 +62,6 @@ function reset() {
     crys3 = getRandInt(1, 12);
     crys4 = getRandInt(1, 12);
 }
-
-
-
 
 // Generate random number
 function getRandInt(min, max) { 
