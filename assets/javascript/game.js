@@ -42,13 +42,11 @@ function checkResults() {
 if (score === target) {
     wins++;
     $("#wins").text("Wins: " + wins);
-    alert("You win!");
     reset();
 }
 else if (score > target) {
     losses++;
     $("#losses").text("Losses: " + losses);
-    alert("You lose.");
     reset();
 }};
 
