@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +8,37 @@
     <title>Crystal Collector</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"> </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"> </script>
     <script src="assets/javascript/game.js"></script>
 </head>
+
 <body>
-    <h1>Crystal Collector</h1>
-    <p id="instructions">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur quasi quis excepturi! Laboriosam quis accusamus culpa vel quibusdam, harum necessitatibus, fuga iste nam a atque quasi cum libero. Cum exercitationem molestias dolore reiciendis quasi sunt.</p>
-    <h4 id="wins">Wins: 0</h4>
-    <h4 id="losses">Losses: 0</h4>
-    <h3 id="target">Target: </h3>
-    <h3 id="score">Score: 0</h3>
-
-<button id="crys1" class="button"><img src="assets/images/purpleCrystal.jpg"></button>
-<button id="crys2" class="button"><img src="assets/images/silverCrystal.jpg"></button>
-<button id="crys3" class="button"><img src="assets/images/blueCrystal.gif"></button>
-<button id="crys4" class="button"><img src="assets/images/redCrystal.png"></button>
-
+    <div class="column-left">
+        <h1>Crystal Collector</h1>
+        <p id="instructions">You will be given a random number at the start of the game.</p>
+        <p id="instructions">There are four crystals below. By clicking on a crystal you will add a specific amount of
+            points to your total score.</p>
+        <p id="instructions">You win the game by matching your total score to the random number, and lose the game if
+            your total score goes above the random number.</p>
+        <p id="instructions">The value of each crustal is hidden from you until you click on it.</p>
+        <p id="instructions">Each time when the game starts, the game will change the values of each crystal.</p>
+        <br>
+        <h4 id="wins" class="counter">Wins: 0</h4>
+        <h4 id="losses" class="counter">Losses: 0</h4>
+        <h3 id="target" class="counter">Target: </h3>
+        <h3 id="score" class="counter">Score: 0</h3>
+        <br>
+        <div class="buttons">
+            <button id="crys1" class="button"><img src="assets/images/purpleCrystal.jpg"></button>
+            <button id="crys2" class="button"><img src="assets/images/silverCrystal.jpg"></button>
+            <button id="crys3" class="button"><img src="assets/images/blueCrystal.gif"></button>
+            <button id="crys4" class="button"><img src="assets/images/redCrystal.png"></button>
+        </div>
+    </div>
+    <div class="column-right">
+        <img src="assets/images/crashBandicoot.png" alt="Crash Bandicoot.png">
+    </div>
 </body>
+
 </html>

@@ -1,11 +1,58 @@
+@font-face {
+    font-family: "crash-a-like";
+    src: url(../font/crash-a-like.ttf);
+}
+
+body {
+    font-family: "crash-a-like", "serif";
+    background: #D98117;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+#instructions {
+    font-size: 20px;
+}
+
 .button img {
-    width: 79px;
+    max-width: 79px;
     height: 63px;
 }
 
 .button {
-    margin: 0;
+    margin: .3rem;
     padding: 0;
     background: #fff;
 }
 
+.counter {
+    font-size: 30px;
+}
+
+.column-left {
+    display: inline-flex;
+    flex-direction: column;
+    width: 48%;
+    background: rgba(255, 255, 255, .5);
+    height: 100vh;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+.column-right {
+    background: rgba(255, 255, 255, .5);
+    float: right;
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    height: 100vh;
+}
